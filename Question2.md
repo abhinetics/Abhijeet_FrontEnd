@@ -14,6 +14,6 @@
 4.The `setSelectedIndex` state setter function is incorrectly used in the `selectedIndex` state declaration, which causes an error when trying to set the initial state. Instead of assigning the function to the state variable, it should be used to set the `initial state` in the useState hook. To fix this, change `const [selectedIndex, setSelectedIndex] = useState(setSelectedIndex);` to `const [selectedIndex, setSelectedIndex] = useState(0);`.
 ![List Component](https://i.ibb.co/9vryJsb/App-js-4.png)
 
-5.The onClick event handler in the WrappedSingleListItem component should be wrapped in an arrow function to prevent it from being called immediately on render. Instead of onClick={onClickHandler(index)}, it should be onClick={() => onClickHandler(index)}.
+5.The `onClick` event handler in the `WrappedSingleListItem` component should be wrapped in an arrow function to prevent it from being called immediately on render. Instead of `onClick={onClickHandler(index)}`, it should be `onClick={() => onClickHandler(index)}`.
 ![List Component](https://i.ibb.co/p2jpRbG/App-js-5.png)
 
