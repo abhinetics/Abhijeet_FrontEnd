@@ -1,9 +1,8 @@
-**Please fix, optimize, and/or modify the component as much as you think is necessary.**
+// Please fix, optimize, and/or modify the component as much as you think is necessary.
 
 import React, { useState, useEffect, memo } from 'react';
 import PropTypes from 'prop-types';
 
-// Single List Item
 const SingleListItem = memo(({ index, isSelected, onClickHandler, text }) => {
   return (
     <li
@@ -22,7 +21,7 @@ SingleListItem.propTypes = {
   text: PropTypes.string.isRequired,
 };
 
-// List Component
+
 const List = memo(({ items }) => {
   const [selectedIndex, setSelectedIndex] = useState(null);
 
